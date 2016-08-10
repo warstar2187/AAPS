@@ -478,8 +478,8 @@ public class OverviewFragment extends Fragment {
             @Override
             public int get(DataPoint data) {
                 BarDataPoint point = (BarDataPoint) data;
-                if (point.isTempBasal) return Color.BLUE;
-                else return Color.CYAN;
+                if (point.isTempBasal) return MainApp.sResources.getColor(R.color.basalTemp);
+                else return MainApp.sResources.getColor(R.color.basalNormal);
             }
         });
 
@@ -578,7 +578,7 @@ public class OverviewFragment extends Fragment {
         // set second scale
         bgGraph.getSecondScale().addSeries(basalsSeries);
         bgGraph.getSecondScale().setMinY(0);
-        bgGraph.getSecondScale().setMaxY(maxBgValue / lowLine * maxBasalValueFound * 1.2d);
+        bgGraph.getSecondScale().setMaxY(maxBgValue / lowLine * maxBasalValueFound * 1.3d);
         bgGraph.getGridLabelRenderer().setVerticalLabelsSecondScaleColor(MainApp.instance().getResources().getColor(R.color.background_material_dark)); // same color as backround = hide
 
 

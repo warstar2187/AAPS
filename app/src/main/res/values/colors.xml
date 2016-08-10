@@ -23,4 +23,7 @@
     <color name="colorPumpLabel">#FF478EFF</color>
     <color name="cardItemLabel">#779ECB</color>
 
+    <color name="basalNormal">#889bfd</color>
+    <color name="basalTemp">#3d5cff</color>
+
 </resources>
